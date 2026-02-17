@@ -1,307 +1,335 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Fisioterapia Medhera",
+  logo: "/images/logo.png",
+  tagline: "Tu recuperación en manos expertas en Sevilla",
+  description: "Fisioterapia Medhera es tu clínica de fisioterapia de confianza en Sevilla, con valoración de 5 estrellas en Google por 47 pacientes. Dirigida por José, fisioterapeuta especializado en tratamiento de lesiones articulares, contracturas y rehabilitación personalizada. Utilizamos ecografía diagnóstica, ejercicios adaptados y planes personalizados para cada paciente. Atención de urgencias disponible.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#2563EB",
+    secondary: "#1E293B",
+    accent: "#06B6D4",
+    neutral: "#F8FAFC"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "603 77 03 85",
+  whatsapp: "+34603770385",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Av. de la Innovación, 6, Edificio Convención, oficina 212, 41020 Sevilla, España",
+    city: "Sevilla",
+    province: "Madrid",
+    postalCode: "41020",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=10995448154532872594&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Fisioterapia%20Medhera%20%4037.4057%2C-5.92893&z=16&output=embed",
+  coordinates: {
+    lat: 37.4057,
+    lng: -5.92893
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - domingo",
+      hours: "9:00–21:00"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 47,
+    url: "https://maps.google.com/?cid=10995448154532872594&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "TOÑI PUNTIVERO",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Lo recomiendo 100 %. Jose es un profesional excepcional, atento, implicado y muy comprometido con su trabajo. Te orienta con ejercicios físicos, adaptados a tus capacidades y dolencias para la mejora y recuperación de las lesiones. El mejor fisioterapeuta que he tenido. En varios meses me he recuperado de varias lesiones articulares. Se basa en pruebas médicas de imagen y lo complementa con el ecógrafo. Un 10 para él.",
+        date: "Hace 3 semanas"
       },
       {
-        author: "Javier Padilla",
+        author: "Lara Franco",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Jose me ha buscado un hueco hoy sábado de donde no tenía para atenderme de urgencias. Llevo muchos años de fisioterapeutas y soy muy exigente con los tratamientos; no solo el de la consulta ha sido fantástico sino que me ha mandado un PDF personalizado con estiramientos para casa. Sin duda alguna acaba de ganar una nueva clienta. Súper recomendable!",
+        date: "Hace 2 semanas"
       },
       {
-        author: "Melanie Ponce",
+        author: "mcristina perez",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Tengo una contractura en la espalda muy grande.\nMe atendió de urgencias y no puedo estar más agradecida.\nLlevo dos sesiones y aunque sé las baritas mágicas no existen he mejorado mucho.\nMil gracias Jose tienes unas manos que valen un imperio, eres todo amabilidad aparte de de un magnífico profesional, nos vemos en la próxima sesión.",
+        date: "Hace 7 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Daniela Rozales",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Mi fisioterapeuta es José, es muy amable, cercano y profesional. No solo te trata durante la sesión, sino que te da ejercicios para seguir mejorando desde casa. Lo recomiendo totalmente",
+        date: "Hace 3 meses"
       },
-    ],
+      {
+        author: "Claudia SC",
+        rating: 5,
+        text: "Mi pareja y yo estamos encantados con las sesiones de Jose. Es un gran profesional, amable y atento en todo momento. Es el mejor fisio al que ambos hemos ido. Muchas gracias!",
+        date: "Hace 3 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Manual Especializada",
+      description: "Tratamiento manual avanzado con técnicas especializadas para aliviar el dolor y mejorar la movilidad. Nuestro enfoque se basa en el diagnóstico preciso de tu lesión para aplicar las maniobras más efectivas. Manos expertas que marcan la diferencia en tu recuperación.",
+      benefits: [
+        "Alivio inmediato del dolor",
+        "Mejora de la movilidad articular",
+        "Tratamiento personalizado según tu lesión"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "lesiones-articulares",
+      name: "Tratamiento de Lesiones Articulares",
+      description: "Especialización en lesiones articulares con apoyo de pruebas médicas de imagen y ecografía diagnóstica. Diseñamos planes de recuperación específicos para cada articulación afectada. Seguimiento exhaustivo hasta tu completa recuperación funcional.",
+      benefits: [
+        "Diagnóstico preciso con ecografía",
+        "Recuperación basada en evidencia médica",
+        "Planes adaptados a cada articulación"
+      ],
+      icon: "Target"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "contracturas-musculares",
+      name: "Tratamiento de Contracturas",
+      description: "Eliminación efectiva de contracturas musculares con técnicas manuales avanzadas y punción seca. Tratamos desde contracturas leves hasta las más persistentes y dolorosas. Resultados visibles desde las primeras sesiones.",
+      benefits: [
+        "Reducción significativa del dolor",
+        "Técnicas manuales especializadas",
+        "Mejora progresiva sesión a sesión"
+      ],
+      icon: "Activity"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "rehabilitacion-personalizada",
+      name: "Rehabilitación Personalizada",
+      description: "Programas de rehabilitación diseñados específicamente para tus capacidades y dolencias. Incluye ejercicios adaptados y progresivos para realizar en clínica y en casa. Te enviamos PDFs personalizados con tu rutina de ejercicios.",
+      benefits: [
+        "Ejercicios adaptados a tu nivel",
+        "Material personalizado para casa",
+        "Seguimiento continuo de tu progreso"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "ecografia-diagnostica",
+      name: "Ecografía Diagnóstica",
+      description: "Tecnología de ecografía para complementar las pruebas médicas de imagen y obtener un diagnóstico preciso. Visualizamos en tiempo real el estado de tus tejidos y articulaciones. Fundamental para diseñar el tratamiento más efectivo.",
+      benefits: [
+        "Diagnóstico visual inmediato",
+        "Complemento a pruebas médicas",
+        "Mayor precisión en el tratamiento"
+      ],
+      icon: "Zap"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Recuperación y prevención de lesiones deportivas con técnicas avanzadas. Tratamiento específico para deportistas que buscan volver a su actividad al máximo rendimiento. Planes de fortalecimiento y prevención de recaídas.",
+      benefits: [
+        "Retorno seguro a la actividad deportiva",
+        "Prevención de nuevas lesiones",
+        "Optimización del rendimiento físico"
+      ],
+      icon: "Target"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "atencion-urgencias",
+      name: "Atención de Urgencias",
+      description: "Disponibilidad para atenderte en situaciones de urgencia, incluso fines de semana. Entendemos que el dolor no espera y buscamos huecos para darte solución inmediata. Compromiso con tu bienestar cuando más lo necesitas.",
+      benefits: [
+        "Atención rápida cuando la necesitas",
+        "Disponibilidad en fines de semana",
+        "Solución inmediata al dolor agudo"
+      ],
+      icon: "Heart"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "ejercicios-domiciliarios",
+      name: "Programas de Ejercicios para Casa",
+      description: "Estiramientos y ejercicios personalizados que complementan tu tratamiento en clínica. Te proporcionamos material en PDF adaptado a tu lesión y capacidades. Seguimiento de tu evolución con los ejercicios pautados.",
+      benefits: [
+        "Continuidad del tratamiento en casa",
+        "PDFs personalizados con ilustraciones",
+        "Mejora más rápida y sostenida"
+      ],
+      icon: "Activity"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotros",
+      description: "Llama al 603 77 03 85 o escríbenos por WhatsApp. Te buscamos hueco lo antes posible, incluso para urgencias en fin de semana si lo necesitas."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración con Ecografía",
+      description: "Evaluamos tu lesión basándonos en tus pruebas médicas de imagen y complementamos con ecografía diagnóstica. Diseñamos un plan de tratamiento específico para tu caso."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Personalizado",
+      description: "Aplicamos las técnicas manuales más adecuadas para tu recuperación. Durante la sesión trabajamos tu lesión y te explicamos ejercicios adaptados a tus capacidades para continuar en casa."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Recuperación",
+      description: "Te proporcionamos PDFs personalizados con ejercicios y estiramientos. Hacemos seguimiento continuo de tu evolución hasta que recuperes completamente tu funcionalidad y bienestar."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "5 Estrellas en Google con 47 Reseñas",
+      description: "Nuestros pacientes nos avalan con la máxima puntuación. Destacan nuestra profesionalidad, implicación personal y resultados efectivos. La confianza de quienes ya han recuperado su bienestar con nosotros es nuestra mejor carta de presentación.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Diagnóstico con Ecografía",
+      description: "Complementamos las pruebas médicas de imagen con ecografía diagnóstica en consulta. Esta tecnología nos permite visualizar tus lesiones en tiempo real y diseñar el tratamiento más preciso y efectivo para tu caso específico.",
+      icon: "Zap"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Seguimiento Integral Personalizado",
+      description: "No solo te tratamos en consulta: te proporcionamos PDFs personalizados con ejercicios y estiramientos adaptados a tu lesión. Este seguimiento continuo acelera tu recuperación y te empodera para cuidar tu salud desde casa.",
+      icon: "Target"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Atención de Urgencias Disponible",
+      description: "Entendemos que el dolor no espera. Por eso buscamos huecos para atenderte cuando más lo necesitas, incluso en fines de semana. Tu bienestar es nuestra prioridad y nos adaptamos a situaciones urgentes.",
+      icon: "Activity"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "José",
+      role: "Fisioterapeuta",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Fisioterapia Medhera nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Fisioterapia Medhera - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Fisioterapia Medhera - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Fisioterapia Medhera - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Fisioterapia Medhera - Imagen 4"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué hace diferente a Fisioterapia Medhera?",
+      answer: "En Fisioterapia Medhera combinamos técnicas manuales especializadas con tecnología de ecografía diagnóstica para un tratamiento más preciso. Nuestros pacientes destacan la implicación personal, el seguimiento exhaustivo y los ejercicios personalizados que enviamos en PDF para continuar en casa. Con 5 estrellas en 47 reseñas de Google, nuestro compromiso es tu recuperación completa."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cuántas sesiones necesitaré para recuperarme?",
+      answer: "Cada lesión y cada persona son diferentes, por lo que el número de sesiones varía según tu caso específico. En Fisioterapia Medhera basamos nuestro diagnóstico en pruebas médicas de imagen y ecografía para establecer un plan realista. Muchos pacientes notan mejora desde las primeras sesiones, pero trabajamos contigo hasta tu recuperación completa, no aplicamos tratamientos estándar."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Atendéis urgencias y fines de semana?",
+      answer: "Sí, en Fisioterapia Medhera entendemos que el dolor no espera. Hacemos lo posible por buscar huecos para atenderte en situaciones de urgencia, incluso en sábados si es necesario. Llama al 603 77 03 85 y te daremos la mejor solución posible para tu caso."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué tipo de lesiones tratáis principalmente?",
+      answer: "En Fisioterapia Medhera somos especialistas en lesiones articulares, contracturas musculares, lesiones deportivas y rehabilitación personalizada. Trabajamos con ecografía diagnóstica y pruebas médicas para tratar desde dolores agudos hasta lesiones crónicas. Nuestros pacientes destacan especialmente nuestra efectividad en contracturas de espalda y problemas articulares."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Proporcionáis ejercicios para hacer en casa?",
+      answer: "Sí, es una parte fundamental de nuestro tratamiento en Fisioterapia Medhera. Te proporcionamos PDFs personalizados con ejercicios y estiramientos adaptados a tu lesión y capacidades físicas. Estos ejercicios complementan el trabajo en clínica y aceleran significativamente tu recuperación. Nuestros pacientes valoran mucho este seguimiento integral."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Cómo puedo pedir cita en Fisioterapia Medhera?",
+      answer: "Puedes solicitar tu cita llamando directamente al 603 77 03 85 o escribiendo por WhatsApp al mismo número. Te atenderemos personalmente para buscar el mejor horario según tu disponibilidad. Si tienes una urgencia, haremos lo posible por atenderte lo antes posible."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Usáis tecnología de diagnóstico en los tratamientos?",
+      answer: "Sí, en Fisioterapia Medhera utilizamos ecografía diagnóstica como complemento a las pruebas médicas de imagen que aportes. Esto nos permite visualizar en tiempo real el estado de tus tejidos y articulaciones, lo que resulta en un diagnóstico más preciso y un tratamiento más efectivo y personalizado."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué opinan vuestros pacientes del tratamiento?",
+      answer: "Fisioterapia Medhera tiene una valoración de 5 estrellas sobre 5 en Google con 47 reseñas de pacientes reales. Nuestros pacientes destacan la profesionalidad, la implicación personal, las manos expertas, la atención cercana y los resultados efectivos. Muchos mencionan que somos el mejor fisioterapeuta que han tenido y recomiendan nuestros servicios al 100%."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Fisioterapia Medhera",
+    defaultTitle: "Fisioterapia Medhera - Fisioterapia en Sevilla",
+    defaultDescription: "Clínica de fisioterapia en Sevilla con 5★ en Google. Especialistas en lesiones articulares, contracturas y rehabilitación. Ecografía diagnóstica. Pide cita: 603 77 03 85",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Sevilla",
+      "Fisioterapia Medhera",
+      "fisioterapeuta Sevilla",
+      "lesiones articulares Sevilla",
+      "contracturas musculares Sevilla",
+      "ecografía fisioterapia Sevilla",
+      "rehabilitación personalizada Sevilla",
+      "fisioterapia deportiva Sevilla",
+      "fisioterapia urgencias Sevilla",
+      "tratamiento contracturas Sevilla",
+      "clínica fisioterapia Sevilla",
+      "mejor fisioterapeuta Sevilla"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Fisioterapia Medhera",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Av. de la Innovación, 6, Edificio Convención, oficina 212, 41020 Sevilla, España, Sevilla, Madrid"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Sevilla"
+  ],
+  heroDescription: "En Fisioterapia Medhera combinamos técnicas manuales avanzadas con tecnología de diagnóstico por ecografía para tratar tus lesiones de forma efectiva. Nuestro compromiso es tu recuperación completa, con seguimiento personalizado y ejercicios adaptados a tus necesidades específicas.",
+  specialty: "Lesiones Articulares y Contracturas",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu bienestar físico?",
+  ctaDescription: "Solicita tu cita de valoración en Fisioterapia Medhera. Te atendemos con la profesionalidad y cercanía que mereces, incluso en urgencias.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
